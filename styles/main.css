@@ -1,0 +1,328 @@
+/**************************************************
+Fonts
+Roboto Condensed
+Droid Serif
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Add Colour scheme
+
+#black
+#white
+#363636
+#ff2800
+
+**************************************************/
+@import "https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Roboto+Condensed:400,700,700i";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.masthead {
+    color: white;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+body {
+    background-image:url(../images/background.jpg);
+    background-repeat: no-repeat;
+}
+h1{
+    font: italic 4.236rem 'Roboto Condensed', Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+img{
+    font: normal 2.618rem 'Roboto Condensed', Helvetica, sans-serif;
+}
+
+h2{
+    font: bold 2.618rem 'Roboto Condensed', Helvetica, sans-serif;
+}
+ul li{
+    font: normal 1.5rem 'Roboto Condensed', Helvetica, sans-serif;
+    TEXT-ALIGN:justify;    
+}
+p, a{
+    font: normal 1.5rem 'Droid Serif', Vollkorn, serif;
+    color: #363636;
+    TEXT-ALIGN:justify;
+}
+footer a, p{
+    font: normal 1.5rem 'Roboto Condensed', Helvetica, sans-serif;
+    TEXT-ALIGN:justify;      
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Roboto Condensed', Helvetica, sans-serif;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+
+.wrapper{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+header{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: 150px;
+    background-image:url(../images/banner02.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow:hidden;
+    
+}
+.second {
+        padding: 20px
+    }
+    
+.first{
+        padding: 20px;
+    }
+    
+nav{
+    width: 100%;
+}
+nav>ul{
+    width: 100%;
+    list-style: none;
+    margin: 40px 0px 40px 0 
+}
+nav li{
+    width: 100%;
+}
+
+nav ul li a {
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
+}
+
+h1 img{
+    
+    width: 100%;
+    height: auto;
+    max-width: 100%;   
+}
+
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: normal 1.618rem 'Roboto Condensed', Helvetica, sans-serif; 
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    background-color: #363636;
+    box-shadow: 0 7px 0 0 #ff2800 inset;
+}
+
+
+main{
+    width: 100%;
+}
+.col{
+    float: none;
+    width: 100%;
+    margin: 30px 0 30px 0
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: white;
+}
+
+
+
+ footer{
+        height: 200px;
+        background-color: black;
+        width: 100%;
+        color: white;
+        box-shadow: 0 7px 0 0 #ff2800 inset; 
+        padding-left: 20px;
+        text-decoration: none;
+    }
+    
+footer p{
+    color: white;
+    padding-top: 30px;
+    
+}
+
+footer a, ul, li{
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+        
+        
+    }
+   
+
+/*--tablet view--*/
+@media screen and (min-width:600px){
+    /*
+    wrapper - 100%
+    header - 100%
+    nav - 90%
+    links - 20% of nav
+    main - 90%
+    columns - 50% of main
+    column image - 60% of column
+    footer - 90%
+    */
+    header{
+        width: 100%;
+    }
+    
+    p{
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    
+    .wraper{
+        width: 100%
+    }
+    .header{
+        width: 100%
+    }
+    
+    .col {
+        width: 50%;
+        float: left;
+    }
+    
+    .second {
+        padding: 20px
+    }
+    
+    .first{
+        padding: 20px;
+    }
+    
+    .col img {
+        width: 100%;
+        height: auto;
+    }
+    
+    nav {
+        margin: auto;
+        width: 90%;
+    }
+    
+    nav li {
+        display: inline-block;
+        float: left;
+        width: 20%;
+    }
+    
+    nav li a {
+        border-right: 1px solid #FFF;
+    }
+    
+    footer{
+        float: left;
+        height: 200px;
+        background-color: black;
+        width: 100%;
+        color: white;
+    }
+    
+    footer p{
+        margin-left: 20px;
+    }
+    
+    footer ul li {
+        display: inline;
+        color: white;
+        padding: 20px; 
+        
+    }
+}
+/*--desktop view --*/
+@media screen and (min-width: 800px){
+    /*
+    header - 100%
+    nav - 90%
+    links - 20% of nav
+    main - 90%
+    columns - 50% of main
+    column image - 50% of column
+    footer - 100%
+    */
+    
+    header{
+        width: 100%;
+    }
+  
+    nav {
+        width: 90%;
+        margin: auto;
+    }
+    }
+/*--large desktop view--*/     
+@media screen and (min-width: 1200px){
+    /*
+    header - 100%
+    nav - 30%
+    links - 100% of nav
+    main - 70%
+    columns - 50% of main
+    column image - 55% of column width
+    footer - 100%
+    */
+    nav {
+        width: 30%;
+        float: left;
+    }
+
+    nav li {
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #FFF;
+    }
+    
+    .col {
+        display:inline-block;
+        width: 35%;
+        float: left;
+    }
+    
+    .col img {
+        width: 100%;
+        height: auto;
+
+    }
+}
