@@ -83,7 +83,7 @@ pre, code, kbd{
 ***************************/
 
 .wrapper{
-    width: 100%;
+    width: 95%;
     max-width: 100rem;
     margin: 0 auto;
 }
@@ -120,8 +120,6 @@ nav ul{
     margin: 40px 0 40px 0 
 }
 nav li{
-    padding-left: 30px;
-        padding-right: 30px;
     width: 100%;
 }
 
