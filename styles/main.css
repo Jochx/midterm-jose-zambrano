@@ -99,11 +99,17 @@ header{
     
 }
 .second {
-        padding: 20px
+        padding-left: 30px;
+        padding-right: 30px;
     }
     
-.first{
-        padding: 20px;
+    
+    .first{
+        padding: 30px;
+    }
+    
+ .second h2 {
+        margin-top: 40px;;
     }
     
 nav{
@@ -111,9 +117,11 @@ nav{
 }
 nav ul{
     width: 100%;
-    margin: 40px 0px 40px 0 
+    margin: 40px 0 40px 0 
 }
 nav li{
+    padding-left: 30px;
+        padding-right: 30px;
     width: 100%;
 }
 
@@ -214,10 +222,10 @@ footer a, ul, li{
     }
     
     .wraper{
-        width: 100%
+        width: 100%;
     }
     .header{
-        width: 100%
+        width: 100%;
     }
     
     .col {
@@ -226,11 +234,13 @@ footer a, ul, li{
     }
     
     .second {
-        padding: 20px
+        padding-left: 30px;
+        padding-right: 30px;
     }
     
+    
     .first{
-        padding: 20px;
+        padding: 30px;
     }
     
     .col img {
